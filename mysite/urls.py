@@ -11,11 +11,15 @@ Class-based views
     2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
 Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
-    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+    2. Add a URL to urlpatterns:  url(r'^challenges/', include('challenges.urls'))
 """
+from django.conf.urls import include
 from django.conf.urls import url
 from django.contrib import admin
 
+#import challenges.urls to keep mysite/urls.py clean:
+#django will direct everything that comes into 'http://127.0.0.1:8000/' to challenges.urls
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'', include('challenges.urls')),
 ]
