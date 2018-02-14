@@ -3,6 +3,7 @@ from django.utils import timezone
 
 
 class Challenge(models.Model):
+#all class object attributes?
     author = models.ForeignKey('auth.User',on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()

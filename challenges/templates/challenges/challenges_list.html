@@ -5,8 +5,25 @@
   </head>
 
   <body>
-    <p>hallihallo!</p>
-    <p>hier kommt unsere challenges-liste!</p>
+    <div>
+      <p><h1>hallihallo!</h1></p>
+    </div>
+
+    <div>
+      <p><h2>hier kommt unsere challenges-liste!</h2></p>
+    </div>
+
+
+    {% for challenge in challenges %}
+      <div>
+        <p>published: {{ challenge.published_date }}</p>
+        <h1><a href=''> {{ challenge.title }}</a></h1>
+        <p>{{ challenge.text|linebreaksbr }}</p>
+      </div>
+      <br><br>
+    {% endfor %}
+
+
   </body>
 
 
