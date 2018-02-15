@@ -1,6 +1,10 @@
-@import 'variables';
-@import 'mixins';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-body {
-  margin: 0;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
