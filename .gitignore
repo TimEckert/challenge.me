@@ -6,6 +6,7 @@ chalvenv
 db.sqlite3
 /static
 .DS_Store
+/node_modules
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

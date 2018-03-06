@@ -1,0 +1,24 @@
+{
+    "name": "challenge.me",
+    "version": "1.0.0",
+    "description": "Cooking challenges to level up your skills",
+    "main": "gulpfile.js",
+    "scripts": {
+      "compile:sass": "node-sass scss/main.scss css/main.css -w"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/TimEckert/challenge.me"
+    },
+    "author": "Tim Eckert, Jasmin Bissig",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/TimEckert/challenge.me/issues"
+    },
+    "homepage": "https://github.com/TimEckert/challenge.me#readme",
+    "devDependencies": {
+      "browser-sync": "^2.18.13",
+      "gulp": "^3.9.1",
+      "gulp-sass": "^3.1.0"
+    }
+  }
