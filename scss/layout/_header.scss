@@ -1,4 +1,6 @@
 .header {
+    background-color: $color-grey;
+    grid-column: full-start / full-end;
 
     &__headline {
 

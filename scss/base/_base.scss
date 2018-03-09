@@ -9,8 +9,22 @@
 html {
     // This defines 1rem = 16px when standard browser settings are used.
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
     box-sizing: border-box;
   }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content repeat(3, 80vh) min-content;
+  grid-template-columns:  [full-start] minmax(6rem, 1fr) 
+                          [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 
+                          minmax(6rem, 1fr) [full-end];
+
+  & > * { 
+      padding: 40px;
+      font-size: 3rem;
+  }
+}
