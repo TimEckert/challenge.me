@@ -12,7 +12,14 @@
     </div>
 
     <div>
-      <p><h2>hier kommt unsere challenges-liste!</h2></p>
+      <p><h2>These are the archived challenges:</h2></p>
+
+      {{ challenges }}
+
+    {% for archived in archived_chalengs %}
+      {{ archived_challenges }}
+    {% endfor %}
+
     </div>
 
 
