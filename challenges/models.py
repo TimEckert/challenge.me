@@ -11,14 +11,14 @@ class Challenge(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
-    published_date = models.DateTimeField(
+    challenge_start = models.DateTimeField(
             blank=True, null=True)
-    archived_date = models.DateTimeField(
+    challenge_stop = models.DateTimeField(
             blank=True, null=True)
 
 
     def publish(self):
-        self.published_date = timezone.now()
+        self.challenge_start = timezone.now()
         self.save()
 
     def __str__(self):
