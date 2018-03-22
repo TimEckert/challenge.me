@@ -15,6 +15,8 @@ class Challenge(models.Model):
             blank=True, null=True)
     challenge_stop = models.DateTimeField(
             blank=True, null=True)
+    challenge_active = models.BooleanField(
+            default=False) 
 
 
     def publish(self):
