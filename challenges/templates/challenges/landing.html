@@ -1,20 +1,48 @@
+{% load staticfiles %}
+
+
 <html>
-    <head>
-        <title>Challenge.me</title>
-    </head>
-    <body>
 
+  <head>
+    <title>challenge.me</title>
+    <link rel='stylesheet' href='{% static 'css/challenge.css' %}'>
+  </head>
+
+  <body>
+    <div>
+      <p><h1>hallihallo!</h1></p>
+    </div>
+
+    {{ active_challenge }}
+
+
+
+
+
+
+    <div>
+      <p><h2>These are the old challenges:</h2></p>
+
+      {% include "challenges/old_challenges.html" %}
+<!--
+    {% for old_challenges in old_challenges %}
+      {{ old_challenges }}
+    {% endfor %} -->
+
+    </div>
+
+
+    <!-- {% for challenge in challenges %}
       <div>
-        <h1>This is the current challenge:</h1>
-        <p>current challenge goes here</p>
+        <p>published: {{ challenge.challenge_start }}</p>
+        <h1><a href=''> {{ challenge.title }}</a></h1>
+        <p>{{ challenge.text|linebreaksbr }}</p>
       </div>
-
-      <div>
-        <h1>These are the old challenges:</h1>
-        <p>Old challenges go here</p>
-        {% include "challenges/old_challenges.html" %}
-      </div>
+      <br><br>
+    {% endfor %} -->
 
 
-    </body>
+  </body>
+
+
 </html>
