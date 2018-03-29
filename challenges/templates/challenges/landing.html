@@ -2,32 +2,50 @@
 
 
 <html>
-
   <head>
-    <title>challenge.me</title>
-    <link rel='stylesheet' href='{% static 'css/challenge.css' %}'>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge.Me</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    
   </head>
+  <body class="container">
 
-  <body>
-    <div>
-      <p><h1>hallihallo!</h1></p>
-    </div>
+    <nav class="navigation"></nav>
 
-    <div>
-      <p>
-        {{ active_challenges }}
-      </p>
-    </div>
+    <header class="header">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <h4 class="card__heading">
+            Challenge Motto
+          </h4>
 
-    <div>
-      <p>
-        {{ old_challenges }}
-      </p>
-    </div>
+          <a href="#" class="btn btn--white">Commit to challenge</a>
+        </div>
 
+        <div class="card__side card__side--back">
+          <div class="card__details">
+            Challenge Details
+          </div>
+        </div>
+      </div>
 
+      <h2 class="header__headline header__headline--left">Love cooking? Level up your skills.</h2>
+      <h2 class="header__headline header__headline--right">Challenge yourself.</h2>
+    </header>
+
+    <section class="best-recipes">
+      Best Recipes
+    </section>
+
+    <section class="last-challenges">
+      Last Challenges
+    </section>
+
+    <footer class="footer">
+      Footer
+    </footer>
 
   </body>
-
-
 </html>
