@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Test views</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+
+    <body>
+        <p><h1>Some challenges containing the word console should follow here:</h1></p>
+
+        {{challenges}}
+
+
+        <p>All challenges go here:</p>
+
+        {{some_challenges}}
+
+
+    </body>
+</html>

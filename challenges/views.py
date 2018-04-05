@@ -12,6 +12,5 @@ from django.template.loader import get_template
 
 def challenges(request):
     challenges = Challenge.objects.all()
-    return render(request, 'challenges/landing.html', {'challenges' : challenges})
     some_challenges = Challenge.objects.filter(title__contains='Console')
-    return render(request, 'challenges/landing.html', {'some_challenges' : some_challenges})
+    return render(request, 'challenges/landing_test.html', {'challenges' : challenges, 'some_challenges': some_challenges})
